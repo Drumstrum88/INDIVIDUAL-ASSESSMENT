@@ -3,8 +3,24 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: darkblue;
+  color:black;
   text-align: center;
   margin-top: 100px;
+}
+
+#navigation {
+  flex: none;
+  margin-bottom: 50px;
+  
+ 
+ }
+
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 300px;
+  max-height: fit-content;
+  
 }
