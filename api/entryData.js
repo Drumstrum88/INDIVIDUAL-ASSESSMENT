@@ -1,48 +1,21 @@
-// import client from '../utils/client';
+import client from '../utils/client';
 // Get a vocab entry
-// const endpoint = client.databaseURL;
-const endpoint = 'https://vocab-you-lary.firebaseio.com';
-const getEntry = (uid) => new Promise((resolve, reject) => {
-  const encodedUid = encodeURIComponent(uid);
-  fetch(`${endpoint}/entries.json?orderBy="uid"&equalTo="${encodedUid}"`, {
+const endpoint = client.databaseURL;
+const getEntry = () => new Promise((resolve, reject) => {
+  // const encodedUid = encodeURIComponent(uid);
+  fetch(`${endpoint}/entries.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
-    .then((response) => response.json())
+    .then((response) => (response.json()))
     .then((data) => {
-      console.warn(data);
-      if (data) {
-        resolve(Object.values(data));
-      } else {
-        resolve([]);
-      }
+      console.warn('data', data);
+      resolve(Object.values(data));
     })
     .catch(reject);
 });
-// getEntry();
-// .then((vocabEntries) => {
-// console.warn(vocabEntries);
-
-//   const entryContainer = document.querySelector('#entries');
-
-//   if (entryContainer) {
-//     entryContainer.innerHTML = '';
-
-//     vocabEntries.forEach((entryObj) => {
-//       entryContainer.innerHTML += `<div class="card" style="width: 18rem;">
-//       <div class="card-body">
-//         <h5 class="card-title">${entryObj.title}</h5>
-//         <p class="card-text">${entryObj.definition}</p>
-//         <button class="btn btn-danger" id="delete-vocab-btn--${entryObj.firebaseKey}">Delete</button>
-//         <button class="btn btn-info" id="edit-vocab-btn--${entryObj.firebaseKey}">Edit</button>
-//       </div>
-//     </div>`;
-//     });
-//   }
-// });
-
 // Create a new vocab entry
 const createEntry = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json`, {

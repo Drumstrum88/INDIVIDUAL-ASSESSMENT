@@ -8,15 +8,15 @@ import navigationEvents from '../components/navigationEvents';
 import { emptyEntries, showEntries } from '../pages/entries';
 
 const startApp = (user) => {
-  domBuilder(user);
+  domBuilder();
   domEvents(user);
   formEvents(user);
-  navBar(user);
-  logoutButton(user);
+  navBar();
+  logoutButton();
   navigationEvents(user);
   getEntry(user.uid).then((entries) => {
     if (entries.length > 0) {
-      getEntry(`${user.uid}`).then(showEntries);
+      showEntries(entries);
     } else {
       emptyEntries();
     }

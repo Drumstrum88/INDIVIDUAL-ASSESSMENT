@@ -16,7 +16,7 @@ const domEvents = (user) => {
         });
       }
     }
-    // Click event to create an entry
+    // // Click event to create an entry
     if (e.target.id.includes('submit-entry')) {
       console.warn('CLICKED CREATE ENTRY', e.target.id);
       addEntryForm();

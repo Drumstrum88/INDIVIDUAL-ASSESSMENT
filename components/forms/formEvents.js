@@ -8,11 +8,12 @@ const formEvents = (user) => {
     if (e.target.id.includes('submit-entry')) {
       console.warn('CLICKED SUBMIT ENTRY', e.target.id);
       const newEntryPayload = {
-        title: document.querySelector('#formName').value,
+        title: document.querySelector('#formTitle').value,
         definition: document.querySelector('#formDefinition').value,
         language: document.querySelector('#formLanguage').value,
         uid: `${user.uid}`,
       };
+      console.warn(newEntryPayload);
       createEntry(newEntryPayload).then((entryArray) => showEntries(entryArray));
     }
 
