@@ -10,6 +10,9 @@ const ViewDirectorBasedOnUserAuthStatus = () => {
   firebase.initializeApp(client);
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      console.warn('user logged in');
+      // eslint-disable-next-line no-console
+      console.info(user);
       // person is logged in do something...
       startApp(user);
     } else {

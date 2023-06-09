@@ -1,28 +1,30 @@
-{
-  "title": "Array",
-  "definition": "An array is a data structure that can store a collection of elements of the same type.",
-  "language": "JavaScript",
-  "uid": "1234567890",
-  "timestamp": "2023-06-08T17:30:00Z"
-},
-{
-  "title": "Function",
-  "definition": "A function is a block of code that can be reused.",
-  "language": "JavaScript",
-  "uid": "1234567890",
-  "timestamp": "2023-06-08T17:30:00Z"
-},
-{
-  "title": "Object",
-  "definition": "An object is a data structure that can store a collection of properties.",
-  "language": "JavaScript",
-  "uid": "1234567890",
-  "timestamp": "2023-06-08T17:30:00Z"
-},
-{
-  "title": "Variable",
-  "definition": "A variable is a named location that can store a value.",
-  "language": "JavaScript",
-  "uid": "1234567890",
-  "timestamp": "2023-06-08T17:30:00Z"
-}
+[
+  {
+    "title": "Array",
+    "definition": "An array is a data structure that can store a collection of elements of the same type.",
+    "language": "JavaScript",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-08T17:30:00"
+  },
+  {
+    "title": "Function",
+    "definition": "A function is a block of code that can be reused.",
+    "language": "JavaScript",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-08T17:30:00"
+  },
+  {
+    "title": "Object",
+    "definition": "An object is a data structure that can store a collection of properties.",
+    "language": "JavaScript",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-08T17:30:00"
+  },
+  {
+    "title": "Variable",
+    "definition": "A variable is a named location that can store a value.",
+    "language": "JavaScript",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-08T17:30:00"
+  }
+]
