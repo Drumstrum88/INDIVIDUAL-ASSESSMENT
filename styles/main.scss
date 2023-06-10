@@ -9,10 +9,43 @@ body {
   margin-top: 100px;
 }
 
+h1 {
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 20px;
+  border-style: inset;
+  border: 4px;
+  border-radius: 15px;
+}
+
 #navigation {
   flex: none;
   margin-bottom: 50px;
   margin-top: -100px;
+  background-origin: padding-box;
+  justify-content: space-around;
   
  
  }
@@ -24,7 +57,20 @@ body {
   border-style: inset;
   border: 4px;
   border-radius: 15px;
+  width: 300px;
+  height: 300px;
+
   
+}
+
+.card:hover {
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 25px;
+  border-style: inset;
+  border: 4px;
+  border-radius: 15px;
 }
 
 #entries {
