@@ -17,7 +17,7 @@ const showEntries = (entries) => {
         <p class="card-text bold">${item.language}</p>
         <p class="card-text">${item.definition}</p>
         <hr>
-        <i id="edit-entry-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
+        <i id="edit-entry--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
         <i id="delete-entry--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
       </div>
     </div>`;
