@@ -1,8 +1,7 @@
-import clearDom from '../../utils/clearDom';
+// import clearDom from '../../utils/clearDom';
 import renderToDom from '../../utils/renderToDom';
 
 const addEntryForm = (obj = {}) => {
-  clearDom();
   const domString = `<div class="modal fade show" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryModalLabel" aria-modal="true">
   <div class="modal-dialog">
     <div class="modal-content">
