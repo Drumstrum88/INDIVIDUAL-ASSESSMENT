@@ -20,9 +20,9 @@ const addEntryForm = (obj = {}) => {
     <textarea class="form-control" placeholder="Card Definition" id="formDefinition" style="height: 150px" value="${obj.definition || ''}" required></textarea>
   </div>
   <select id="formLanguage" class="form-select" aria-label="Default select example">
-    <option selected>Pick A Language</option>Python</option>
-    <option value="c#" ${obj.language ? 'checked' : ''}>C#</option>
-    <option value="javascript" ${obj.language ? 'checked' : ''}>Javascript</option>
+    <option selected>Pick A Language</option>
+    <option value="c#" ${obj.language === 'c#' ? 'selected' : ''}>C#</option>
+    <option value="javascript" ${obj.language === 'javascript' ? 'selected' : ''}>Javascript</option>
   </select>
   <button id="submit-card" type="submit" class="btn btn-outline-light me-2 submit-btn">Submit</button>
 </form>
@@ -36,6 +36,16 @@ const addEntryForm = (obj = {}) => {
   // eslint-disable-next-line no-undef
   const addEntryModal = new bootstrap.Modal(document.getElementById('addEntryModal'));
   addEntryModal.show();
+
+  // Close the modal on submit
+  const submitForm = document.getElementById(obj.firebaseKey ? `edit-entry--${obj.firebaseKey}` : 'submit-entry');
+  submitForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent form submission
+
+    // Perform any necessary form validation or data processing here
+
+    addEntryModal.hide(); // Close the modal
+  });
 };
 
 export default addEntryForm;
