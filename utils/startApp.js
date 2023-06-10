@@ -12,8 +12,8 @@ const startApp = (user) => {
   formEvents(user);
   navBar();
   domEvents(user);
-  navigationEvents(user);
   logoutButton();
+  navigationEvents(user);
 
   getEntry(user.uid).then((entries) => showEntries(entries));
 };
