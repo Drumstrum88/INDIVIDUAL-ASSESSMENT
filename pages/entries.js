@@ -9,7 +9,7 @@ const emptyEntries = () => {
 
 const showEntries = (entries) => {
   let domString = '';
-  Array.from(entries).forEach((item) => {
+  entries.forEach((item) => {
     domString
     += `<div class="card">
       <div class="card-body">
@@ -22,9 +22,8 @@ const showEntries = (entries) => {
       </div>
     </div>`;
   });
-
-  filterButton();
   renderToDom('#entries', domString);
+  filterButton();
 };
 
 export { emptyEntries, showEntries };
