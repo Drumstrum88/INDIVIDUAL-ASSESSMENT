@@ -1,4 +1,5 @@
 // import clearDom from '../utils/clearDom';
+import filterButton from '../components/filter';
 import renderToDom from '../utils/renderToDom';
 
 const emptyEntries = () => {
@@ -21,9 +22,9 @@ const showEntries = (entries) => {
       </div>
     </div>`;
   });
+
+  filterButton();
   renderToDom('#entries', domString);
 };
-
-// domString += '</div>';
 
 export { emptyEntries, showEntries };

@@ -12,15 +12,41 @@ body {
 #navigation {
   flex: none;
   margin-bottom: 50px;
+  margin-top: -100px;
   
  
  }
 
 .card {
   border: 2px solid black;
-  border-radius: 10px;
-  margin: 10px;
-  max-width: 300px;
-  max-height: fit-content;
+  padding: 20px;
+  margin: 25px;
+  border-style: inset;
+  border: 4px;
+  border-radius: 15px;
   
 }
+
+#entries {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px;
+  padding: 20px;
+  background-color: azure;
+  border-style: inset;
+  border: 4px;
+  border-radius: 15px;
+
+}
+
+#filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 20px;
+  border-style: inset;
+  border: 4px;
+  border-radius: 15px;
+}
+  

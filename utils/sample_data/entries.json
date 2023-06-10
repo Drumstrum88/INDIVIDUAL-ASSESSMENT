@@ -26,5 +26,61 @@
     "language": "JavaScript",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
     "timestamp": "2023-06-08T17:30:00"
+  },
+  {
+    "title": "Python",
+    "definition": "A high-level programming language known for its simplicity and readability.",
+    "language": "Python",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "List",
+    "definition": "A built-in data structure in Python used to store multiple items in a single variable.",
+    "language": "Python",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "Function",
+    "definition": "A block of reusable code that performs a specific task.",
+    "language": "Python",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "Module",
+    "definition": "A file containing Python code that can be imported and used in other programs.",
+    "language": "Python",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "C#",
+    "definition": "A modern, general-purpose programming language developed by Microsoft.",
+    "language": "C#",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "Class",
+    "definition": "A blueprint or template for creating objects in C#.",
+    "language": "C#",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "Array",
+    "definition": "A fixed-size collection of elements of the same type in C#.",
+    "language": "C#",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
+  },
+  {
+    "title": "Inheritance",
+    "definition": "A mechanism in C# where a class derives properties and behavior from another class.",
+    "language": "C#",
+    "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
+    "timestamp": "2023-06-07T12:00:00Z"
   }
 ]

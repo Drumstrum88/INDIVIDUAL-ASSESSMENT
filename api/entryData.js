@@ -1,18 +1,21 @@
 import client from '../utils/client';
 // Get a vocab entry
 const endpoint = client.databaseURL;
-const getEntry = () => new Promise((resolve, reject) => {
+const getEntry = (uid) => new Promise((resolve, reject) => {
   // const encodedUid = encodeURIComponent(uid);
-  fetch(`${endpoint}/entries.json`, {
+  fetch(`${endpoint}/entries.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json/',
     },
   })
-    .then((response) => (response.json()))
+    .then((response) => response.json())
     .then((data) => {
-      console.warn('data', data);
-      resolve(Object.values(data));
+      if (data) {
+        resolve(Object.values(data));
+      } else {
+        resolve([]);
+      }
     })
     .catch(reject);
 });
@@ -64,14 +67,8 @@ const getSingleEntry = (entryFirebaseKey) => new Promise((resolve, reject) => {
       'Content-Type': 'application/json',
     },
   })
-    .then(() => Response.json())
-    .then((data) => {
-      if (data) {
-        resolve(data);
-      } else {
-        resolve({});
-      }
-    })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
     .catch(reject);
 });
 
