@@ -2,7 +2,7 @@ import { createEntry, getEntry, updateEntry } from '../../api/entryData';
 import { showEntries } from '../../pages/entries';
 
 const formEvents = (user) => {
-  document.querySelector('#main-container').addEventListener('click', async (e) => {
+  document.querySelector('#main-container').addEventListener('submit', async (e) => {
     e.preventDefault();
     // Click event for submitting an entry
     if (e.target.id.includes('submit-entry')) {
@@ -12,9 +12,16 @@ const formEvents = (user) => {
         definition: document.querySelector('#formDefinition').value,
         language: document.querySelector('#formLanguage').value,
         uid: `${user.uid}`,
+        date: new Date()
       };
       console.warn(newEntryPayload);
-      createEntry(newEntryPayload).then((entryArray) => showEntries(entryArray));
+      createEntry(newEntryPayload).then(({ name }) => {
+        const patchPayload = { firebaseKey: name };
+
+        updateEntry(patchPayload).then(() => {
+          getEntry(`${user.uid}`).then(showEntries);
+        });
+      });
     }
 
     // Click event for editing an entry
@@ -26,7 +33,6 @@ const formEvents = (user) => {
         title: document.querySelector('#formName').value,
         definition: document.querySelector('#formDefinition').value,
         language: document.querySelector('#formLanguage').value,
-        uid: user.uid
       };
       updateEntry(updateEntryPayload).then(() => {
         getEntry(`${user.uid}`).then(showEntries);

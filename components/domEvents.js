@@ -17,16 +17,14 @@ const domEvents = (user) => {
       }
     }
     // // Click event to create an entry
-    if (e.target.id.includes('submit-entry')) {
+    if (e.target.id.includes('add-entry-btn')) {
       console.warn('CLICKED CREATE ENTRY', e.target.id);
       addEntryForm();
     }
     // Click event to edit an entry
     if (e.target.id.includes('edit-entry-btn')) {
-      console.warn('CLICKED EDIT ENTRY', e.target.id);
-      console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
-      addEntryForm(await getSingleEntry(firebaseKey));
+      getSingleEntry(firebaseKey).then((entryObj) => addEntryForm(entryObj));
     }
   });
 };

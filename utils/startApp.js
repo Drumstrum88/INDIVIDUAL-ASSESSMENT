@@ -5,22 +5,17 @@ import formEvents from '../components/forms/formEvents';
 import logoutButton from '../components/logoutButton';
 import navBar from '../components/navbar';
 import navigationEvents from '../components/navigationEvents';
-import { emptyEntries, showEntries } from '../pages/entries';
+import { showEntries } from '../pages/entries';
 
 const startApp = (user) => {
   domBuilder();
-  domEvents(user);
   formEvents(user);
   navBar();
-  logoutButton();
+  domEvents(user);
   navigationEvents(user);
-  getEntry(user.uid).then((entries) => {
-    if (entries.length > 0) {
-      showEntries(entries);
-    } else {
-      emptyEntries();
-    }
-  });
+  logoutButton();
+
+  getEntry(user.uid).then((entries) => showEntries(entries));
 };
 
 export default startApp;
