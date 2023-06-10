@@ -11,14 +11,11 @@ const navigationEvents = (user) => {
   });
 
   // FILTER BUTTONS
-  const filterButtons = document.querySelectorAll('.filter-btns button');
-  filterButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const language = button.id;
-      getEntry(user.uid).then((entries) => {
-        const filteredEntries = entries.filter((entry) => entry.language === language);
-        showEntries(filteredEntries);
-      });
+  document.querySelector('#filters').addEventListener('click', (e) => {
+    const language = e.target.id;
+    getEntry(user.uid).then((entries) => {
+      const filteredEntries = entries.filter((entry) => entry.language === language);
+      showEntries(filteredEntries);
     });
   });
 };

@@ -22,7 +22,7 @@ const domEvents = (user) => {
       addEntryForm();
     }
     // Click event to edit an entry
-    if (e.target.id.includes('edit-entry-btn')) {
+    if (e.target.id.includes('edit-entry')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleEntry(firebaseKey).then((entryObj) => addEntryForm(entryObj));
     }

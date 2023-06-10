@@ -4,83 +4,95 @@
     "definition": "An array is a data structure that can store a collection of elements of the same type.",
     "language": "JavaScript",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-08T17:30:00"
+    "timestamp": "2023-06-08T17:30:00",
+    "firebaseKey": ""
   },
   {
     "title": "Function",
     "definition": "A function is a block of code that can be reused.",
     "language": "JavaScript",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-08T17:30:00"
+    "timestamp": "2023-06-08T17:30:00",
+    "firebaseKey": ""
   },
   {
     "title": "Object",
     "definition": "An object is a data structure that can store a collection of properties.",
     "language": "JavaScript",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-08T17:30:00"
+    "timestamp": "2023-06-08T17:30:00",
+    "firebaseKey": ""
   },
   {
     "title": "Variable",
     "definition": "A variable is a named location that can store a value.",
     "language": "JavaScript",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-08T17:30:00"
+    "timestamp": "2023-06-08T17:30:00",
+    "firebaseKey": ""
   },
   {
     "title": "Python",
     "definition": "A high-level programming language known for its simplicity and readability.",
     "language": "Python",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "List",
     "definition": "A built-in data structure in Python used to store multiple items in a single variable.",
     "language": "Python",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "Function",
     "definition": "A block of reusable code that performs a specific task.",
     "language": "Python",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "Module",
     "definition": "A file containing Python code that can be imported and used in other programs.",
     "language": "Python",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "C#",
     "definition": "A modern, general-purpose programming language developed by Microsoft.",
     "language": "C#",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "Class",
     "definition": "A blueprint or template for creating objects in C#.",
     "language": "C#",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "Array",
     "definition": "A fixed-size collection of elements of the same type in C#.",
     "language": "C#",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   },
   {
     "title": "Inheritance",
     "definition": "A mechanism in C# where a class derives properties and behavior from another class.",
     "language": "C#",
     "uid": "7puFHNGTFcarUoJ2cMwbdMJLIMG3",
-    "timestamp": "2023-06-07T12:00:00Z"
+    "timestamp": "2023-06-07T12:00:00Z",
+    "firebaseKey": ""
   }
 ]

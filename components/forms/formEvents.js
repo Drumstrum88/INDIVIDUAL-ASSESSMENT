@@ -1,5 +1,6 @@
 import { createEntry, getEntry, updateEntry } from '../../api/entryData';
 import { showEntries } from '../../pages/entries';
+import navBar from '../navbar';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', async (e) => {
@@ -20,6 +21,7 @@ const formEvents = (user) => {
 
         updateEntry(patchPayload).then(() => {
           getEntry(`${user.uid}`).then(showEntries);
+          navBar();
         });
       });
     }
@@ -29,10 +31,10 @@ const formEvents = (user) => {
       const [, firebaseKey] = e.target.id.split('--');
       console.warn('CLICKED EDIT ENTRY', firebaseKey);
       const updateEntryPayload = {
-        firebaseKey,
         title: document.querySelector('#formName').value,
         definition: document.querySelector('#formDefinition').value,
         language: document.querySelector('#formLanguage').value,
+        firebaseKey,
       };
       updateEntry(updateEntryPayload).then(() => {
         getEntry(`${user.uid}`).then(showEntries);
